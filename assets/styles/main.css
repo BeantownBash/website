@@ -54,7 +54,7 @@ h1 {
 h2 {
     font-size: 4rem;
     margin: 0;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     margin-top: 1.5rem;
 }
 
@@ -526,14 +526,15 @@ header.is-blurred {
     }
 }
 
-.sponsor-box {
+.sponsors-container {
     padding: 1.5rem;
     border-radius: 10px;
     margin: 1rem 0;
 }
 
-.sponsor-box p {
+.sponsors-container p {
     text-align: center;
+    margin: 0;
 }
 
 #gold-sponsors {
@@ -695,7 +696,7 @@ footer {
 #footer-left {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    /* width: 100%; */
 }
 
 #footer-right {
