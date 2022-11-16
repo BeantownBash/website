@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beantown Bash | Boston Hackathon</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Passion+One&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="assets/styles/main.css" />
+    </head>
+    <body>
+        <svg id="svgClips">
+            <clipPath id="footerClip" clipPathUnits="objectBoundingBox">
+                <path
+                    d="m 0 1 l 0 -0.5 l 0.3 0 q 0.1 0 0.2 0.2 q 0.1 0.2 0.2 0.2 l 0.3 0 l 0 0.1 z"
+                />
+                <!-- <path
+                    d="m 0 0.5 a 0.5 0.5 90 0 1 0.5 -0.5 a 0.5 0.5 90 0 1 0.5 0.5 l -0.08 0 a 0.42 0.42 90 0 0 -0.42 0.42 l 0 0.08 a 0.5 0.5 90 0 1 -0.5 -0.5 z"
+                /> -->
+            </clipPath>
+        </svg>
+        </svg>
+        <header>
+            <div id="header-logo">
+                <img src="assets/images/logo.webp" alt="" />
+                <h5>BEANTOWN BASH</h5>
+            </div>
+            <button id="header-menu-open">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+
+            <nav id="header-menu">
+                <button id="header-menu-close">
+                    <ion-icon name="close"></ion-icon>
+                </button>
+                <button id="home-scroll">Home</button>
+                <button id="info-scroll">Info</button>
+                <button id="sponsors-scroll">Sponsors</button>
+                <button id="faq-scroll">FAQ</button>
+                <a id="header-signup">Sign Up!</a>
+            </nav>
+            <div id="header-menu-backdrop"></div>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="hero-column" id="hero-left">
+                    <img
+                        id="hero-rockets"
+                        src="assets/images/rockets.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="hero-column" id="hero-right">
+                    <div id="hero-logo">
+                        <img src="assets/images/logo.webp" alt="" />
+                    </div>
+                    <div class="line-1">
+                        <h1>BEANTOWN</h1>
+                    </div>
+                    <div class="line-2">
+                        <h1>BASH</h1>
+                        <h3>Feb 12-14</h3>
+                    </div>
+                    <div class="line-3">
+                        <p id="hero-tagline">Build, Ship, Beans.</p>
+                        <p id="hero-description">
+                            A hackathon in the Boston area.
+                        </p>
+                    </div>
+                    <div class="line-4">
+                        <a id="hero-signup" class="button">Sign Up!</a>
+                    </div>
+                    <div class="line-5">
+                        <button id="hero-learn-more" class="button">
+                            <ion-icon name="arrow-down"></ion-icon> Learn More
+                        </button>
+                    </div>
+                </div>
+                <div id="fadeout"></div>
+            </section>
+            <section id="content">
+                <div id="info">
+                    <h2 id="info">TELL ME MORE...</h2>
+                    <img src="assets/images/logo.webp" alt="" />
+                    <p>
+                        Beantown Bash is not your average hackathon. Here's a
+                        few things that make it special.
+                    </p>
+                    <ul>
+                        <li>
+                            We don't care if your project has machine learning
+                            or some fancy buzzwords. We want you to make
+                            something cool and meaningful to you.
+                        </li>
+                        <li>
+                            It's judged by YOU. Yes, you. Your fate won't depend
+                            on software developers we've found to look for
+                            buzzwords.
+                        </li>
+                        <li>
+                            There's no requirements on what you should make.
+                            Preferably, it should be tech-related, but beyond
+                            that, the world is your oyster.
+                        </li>
+                    </ul>
+                    <h2>WHY?</h2>
+                    <p>
+                        We've got a mission. We want to make hackathons truly
+                        fun and enjoyable. Hackathons are a way to show off your
+                        skills, whether that's coding, problem-solving, or
+                        project management. They're not just a way to build your
+                        resume.
+                    </p>
+                    <p>
+                        Join us on <strong>February 12-14, 2023</strong>, for a
+                        weekend of fun, hanging out with great people, and
+                        building something awesome.
+                    </p>
+                </div>
+                <div id="sponsors">
+                    <h2>SPONSORS</h2>
+                    <p>
+                        Beantown Bash is powered by the generous support of our
+                        sponsors.
+                    </p>
+                    <div class="sponsor-box" id="gold-sponsors">
+                        <p>Support us!</p>
+                    </div>
+                    <div class="sponsor-box" id="silver-sponsors">
+                        <p>Support us!</p>
+                    </div>
+                    <div class="sponsor-box" id="bronze-sponsors">
+                        <p>Support us!</p>
+                    </div>
+                    <div id="sponsor-interest">
+                        <p id="sponsor-promo">
+                            Want to help us bring tech back to Boston?
+                        </p>
+                        <a href="" class="button" id="sponsor-lets-talk">
+                            Let's Talk
+                        </a>
+                    </div>
+                </div>
+                <div id="faq">
+                    <h3>FREQUENTLY ASKED QUESTIONS</h3>
+                    <div id="faq-grid">
+                        <div class="faq-cell" id="faq-1">
+                            <h4 class="faq-header">
+                                What is a hackathon?
+                                <ion-icon
+                                    class="faq-collapse"
+                                    name="chevron-down"
+                                ></ion-icon>
+                            </h4>
+                            <div class="faq-content">
+                                <p>
+                                    Is it where I hack into things? That sounds
+                                    illegal.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-cell" id="faq-2">
+                            <h4 class="faq-header">
+                                What is a hackathon?
+
+                                <ion-icon
+                                    class="faq-collapse"
+                                    name="chevron-down"
+                                ></ion-icon>
+                            </h4>
+
+                            <div class="faq-content">
+                                <p>
+                                    Is it where I hack into things? That sounds
+                                    illegal.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-cell" id="faq-3">
+                            <h4 class="faq-header">
+                                What is a hackathon?
+                                <ion-icon
+                                    class="faq-collapse"
+                                    name="chevron-down"
+                                ></ion-icon>
+                            </h4>
+                            <div class="faq-content">
+                                <p>
+                                    Is it where I hack into things? That sounds
+                                    illegal.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-cell" id="faq-4">
+                            <h4 class="faq-header">
+                                What is a hackathon?
+                                <ion-icon
+                                    class="faq-collapse"
+                                    name="chevron-down"
+                                ></ion-icon>
+                            </h4>
+                            <div class="faq-content">
+                                <p>
+                                    Is it where I hack into things? That sounds
+                                    illegal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="footer-shape"></div>
+            <div id="footer-left">
+                <img id="footer-logo" src="assets/images/logo.webp" alt="" />
+                <h3>
+                    Build.<br/>
+                    Ship.<br/>
+                    Beans.
+                </h3>
+            </div>
+            <div id="footer-right">
+                <p>Copyright &copy; 2022-2023 Beantown Bash</p>
+                <p>
+                    Banner photo by
+                    <a
+                        href="https://unsplash.com/@weirick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Jake Weirick</a
+                    >
+                    on
+                    <a
+                        href="https://unsplash.com/s/photos/stars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Unsplash</a
+                    >
+                </p>
+            </div>
+        </footer>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
