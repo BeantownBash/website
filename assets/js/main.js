@@ -61,7 +61,7 @@ function bindScrollButton(buttonId, elementId, addToList = true) {
 
     button.addEventListener('click', () => {
         window.scrollTo({
-            top: element.offsetTop - header.offsetHeight,
+            top: element.offsetTop - header.offsetHeight + 5,
             behavior: 'smooth',
         });
         headerMenu.classList.remove('is-open');
