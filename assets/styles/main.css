@@ -37,6 +37,7 @@ html {
     background: var(--color-black);
     font-size: 16px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -857,19 +858,42 @@ header.is-blurred {
     padding: 0;
     gap: 1rem;
     justify-content: stretch;
+    width: 100%;
 }
 
-#reasons div {
+.reason {
     margin: 0;
     padding: 1.5rem;
     border-radius: 15px;
     flex: 1;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
 }
 
-#reasons div p {
+.reason p {
     margin: 0;
     margin-top: 1rem;
     font-size: 1.2rem;
+}
+
+.reason-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.reason-icon-container {
+    flex: 1;
+}
+
+.reason-icons img {
+    max-height: 80px;
+    width: 100%;
+    object-fit: contain;
 }
 
 #reason-1 {
@@ -895,19 +919,53 @@ header.is-blurred {
     #reasons {
         flex-direction: column;
     }
+
+    .reason {
+        flex-direction: row-reverse;
+        gap: 2rem;
+        justify-content: flex-end;
+    }
+
+    .reason-icons {
+        flex-direction: column;
+        width: unset;
+        /* height: 100%; */
+        align-items: center;
+    }
+
+    .reason-icons img {
+        width: 50px;
+        max-height: unset;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
-#info img {
+/* #info img {
     width: 230px;
     float: right;
-    /* margin-left: 2rem; */
     margin: 2rem;
     display: none;
+} */
+
+/* @media only screen and (max-width: 650px) {
+    #info img {
+        display: none;
+    }
+} */
+
+#mission-img {
+    width: 230px;
+    float: right;
+    margin: 2rem;
 }
 
 @media only screen and (max-width: 650px) {
-    #info img {
-        display: none;
+    #mission-img {
+        float: none;
+        width: 200px;
+        display: block;
+        margin: 2rem auto;
     }
 }
 
