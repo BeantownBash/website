@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Passion+One:wght@400;700;900&family=Epilogue:wght@400;700;900"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono:wght@400;700&family=Epilogue:wght@400;700;900"
             rel="stylesheet"
         />
 
@@ -828,7 +828,7 @@
                 <svg viewBox="0 0 593 516" xmlns="http://www.w3.org/2000/svg">
                     <use href="#logo-can" x="0" y="0" style="opacity: 1" />
                 </svg>
-                <h5>BEANTOWN BASH</h5>
+                <h5>Beantown Bash</h5>
             </div>
             <button type="button" id="header-menu-open">
                 <ion-icon name="menu"></ion-icon>
@@ -842,7 +842,7 @@
                 <button type="button" id="info-scroll">Info</button>
                 <button type="button" id="sponsors-scroll">Sponsors</button>
                 <button type="button" id="faq-scroll">FAQ</button>
-                <a id="header-signup">Sign Up!</a>
+                <a id="header-signup">Preregister!</a>
             </nav>
             <div id="header-menu-backdrop"></div>
         </header>
@@ -921,7 +921,7 @@
                         </div>
                         <div class="line" id="hero-line-2">
                             <h1>Bash</h1>
-                            <h3>Feb 12-14</h3>
+                            <h3>Spring,<span id="year-vert">2023</span></h3>
                         </div>
                         <div class="line" id="hero-line-3">
                             <!-- <p id="hero-tagline">Build, Ship, Beans.</p> -->
@@ -929,9 +929,12 @@
                                 An <span id="anti">anti-hackathon</span> in
                                 Boston.
                             </p>
+                            <p id="hero-description">
+                                Hosted at Tufts University.
+                            </p>
                         </div>
                         <div class="line" id="hero-line-4">
-                            <a id="hero-signup" class="button">Sign Up!</a>
+                            <a id="hero-signup" class="button">Preregister!</a>
                         </div>
                         <div class="line" id="hero-line-5">
                             <button
@@ -972,7 +975,7 @@
                                 </div>
                             </div>
                             <div class="reason-body">
-                                <h4>Cool shit, not bull shit</h4>
+                                <h4>Make stuff, don't fake stuff</h4>
                                 <p>
                                     We don't care about buzzwords and flashy
                                     presentations.
@@ -1047,10 +1050,74 @@
                         resume.
                     </p>
                     <p>
-                        Join us on <strong>February 12-14, 2023</strong>, for a
-                        weekend of fun, hanging out with great people, and
-                        building something awesome.
+                        Join us in <strong>Spring, 2023</strong> on the Tufts
+                        University campus, for a weekend of fun, hanging out
+                        with great people, and building something awesome.
                     </p>
+                    <h2>Project Tracks</h2>
+                    <p>
+                        We've got a few project tracks to guide your ideas and
+                        help you make something awesome.
+                    </p>
+                    <div id="tracks-grid">
+                        <div class="tracks-cell" id="track-1">
+                            <h4 class="tracks-header">🍳 Refry Rehash</h4>
+                            <div class="tracks-content">
+                                <p>
+                                    Find ways to mix and match your favorite
+                                    things, be it tech stacks, projects, or
+                                    features!
+                                </p>
+                                <div class="tracks-divider"></div>
+                                <p>
+                                    Ex. Using ChatGPT to write a picture book,
+                                    and then DALL-E to create illustrations.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tracks-cell" id="track-2">
+                            <h4 class="tracks-header">➡️ New Connect</h4>
+                            <div class="tracks-content">
+                                <p>
+                                    The landscape of social media is shifting;
+                                    can you find a new way to meaningfully
+                                    connect people together?
+                                </p>
+                                <div class="tracks-divider"></div>
+                                <p>
+                                    Ex. A platform that shares real, unfiltered,
+                                    10 sec clips. A new way to perform content
+                                    moderation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tracks-cell" id="track-3">
+                            <h4 class="tracks-header">
+                                🔍 Small Data, Big Ideas
+                            </h4>
+                            <div class="tracks-content">
+                                <p>
+                                    Everyone is talking about big data, but can
+                                    you find new ways to explore information on
+                                    the community level?
+                                </p>
+                                <div class="tracks-divider"></div>
+                                <p>
+                                    Ex. Analyzing school student absences to get
+                                    a read on flu spread in a city.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tracks-cell" id="track-4">
+                            <h4 class="tracks-header">⭐ Other</h4>
+                            <div class="tracks-content">
+                                <p>
+                                    Have an idea that doesn't fit into one of
+                                    our categories? That's fine!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="sponsors">
                     <h2>Sponsors</h2>
@@ -1060,21 +1127,43 @@
                     </p>
                     <div class="sponsors-container" id="gold-sponsors">
                         <h4>Gold Tier</h4>
-                        <p>Support us!</p>
+                        <p>
+                            Get your logo on all our marketing materials, a
+                            booth at the event, and sections in our pre/post
+                            email.
+                        </p>
+                        <div class="sponsors-list">
+                            <a href="https://www.tufts.edu/">
+                                <img
+                                    src="assets/images/Tufts_univ_black.png"
+                                    alt="Tufts University"
+                                />
+                            </a>
+                        </div>
                     </div>
                     <div class="sponsors-container" id="silver-sponsors">
                         <h4>Silver Tier</h4>
-                        <p>Support us!</p>
+                        <p>
+                            Get your logo on our shirts, recruiting info for our
+                            participants, and features in our newsletter.
+                        </p>
                     </div>
                     <div class="sponsors-container" id="bronze-sponsors">
                         <h4>Bronze Tier</h4>
-                        <p>Support us!</p>
+                        <p>
+                            Provide mentors and get promotion on our social
+                            media.
+                        </p>
                     </div>
                     <div id="sponsor-interest">
                         <p id="sponsor-promo">
                             Want to help us bring tech back to Boston?
                         </p>
-                        <a href="" class="button" id="sponsor-lets-talk">
+                        <a
+                            href="mailto:team@beantownbash.org"
+                            class="button"
+                            id="sponsor-lets-talk"
+                        >
                             Let's Talk
                         </a>
                     </div>
@@ -1092,14 +1181,16 @@
                             </h4>
                             <div class="faq-content">
                                 <p>
-                                    Is it where I hack into things? That sounds
-                                    illegal.
+                                    A hackathon is a 12-48 hour event where
+                                    groups of people can get together and
+                                    create! Don't worry, we're not doing any
+                                    computer hacking.
                                 </p>
                             </div>
                         </div>
                         <div class="faq-cell" id="faq-2">
                             <h4 class="faq-header">
-                                What is a hackathon?
+                                What's special about Beantown Bash?
 
                                 <ion-icon
                                     class="faq-collapse"
@@ -1109,14 +1200,18 @@
 
                             <div class="faq-content">
                                 <p>
-                                    Is it where I hack into things? That sounds
-                                    illegal.
+                                    We think the current hackathon scene has
+                                    deviated too much from its original goal.
+                                    Projects now involve sticking together as
+                                    many fancy-sounding words as possible,
+                                    instead of making something real and great.
                                 </p>
+                                <p>We made Beantown Bash to change that.</p>
                             </div>
                         </div>
                         <div class="faq-cell" id="faq-3">
                             <h4 class="faq-header">
-                                What is a hackathon?
+                                Who is judging our projects?
                                 <ion-icon
                                     class="faq-collapse"
                                     name="chevron-down"
@@ -1124,14 +1219,24 @@
                             </h4>
                             <div class="faq-content">
                                 <p>
-                                    Is it where I hack into things? That sounds
-                                    illegal.
+                                    We’re inviting the best judges around.
+                                    People who know a great Taylor Swift song
+                                    when they hear it, or an amazing app when
+                                    they see it. Our judging squad is diverse,
+                                    intelligent, and kick ass. You know who it
+                                    is?
+                                </p>
+                                <p>
+                                    You! Yes, you. At Beantown Bash, our
+                                    participants judge. Alongside other hackers,
+                                    you will be rating projects from most
+                                    exciting, to most mathy, to most… Bean.
                                 </p>
                             </div>
                         </div>
                         <div class="faq-cell" id="faq-4">
                             <h4 class="faq-header">
-                                What is a hackathon?
+                                Is there an age requirement?
                                 <ion-icon
                                     class="faq-collapse"
                                     name="chevron-down"
@@ -1139,14 +1244,20 @@
                             </h4>
                             <div class="faq-content">
                                 <p>
-                                    Is it where I hack into things? That sounds
-                                    illegal.
+                                    Nope! High schoolers and middle schoolers
+                                    are welcome! If you’re in college, we'd love
+                                    for you to sign up as one of our
+                                    mentors/volunteers.
+                                </p>
+                                <p>
+                                    If you're interested, please fill out our
+                                    preregistration form.
                                 </p>
                             </div>
                         </div>
                         <div class="faq-cell" id="faq-5">
                             <h4 class="faq-header">
-                                What is a hackathon?
+                                What if I can’t program… yet?
                                 <ion-icon
                                     class="faq-collapse"
                                     name="chevron-down"
@@ -1154,14 +1265,25 @@
                             </h4>
                             <div class="faq-content">
                                 <p>
-                                    Is it where I hack into things? That sounds
-                                    illegal.
+                                    Beantown Bash is open to any skill set and
+                                    background. Can’t program? No problem! Are
+                                    you a designer? Come sign up! Beantown Bash
+                                    isn’t just about programming, it’s about
+                                    creating. As long as you want to make some
+                                    cool stuff in a 12 hour period, come on
+                                    over!
+                                </p>
+                                <p>
+                                    Also, we're offering free mentorship and
+                                    coding seminars during the event, so you can
+                                    learn something new or hone your coding
+                                    chops.
                                 </p>
                             </div>
                         </div>
                         <div class="faq-cell" id="faq-6">
                             <h4 class="faq-header">
-                                What is a hackathon?
+                                Where is it located?
                                 <ion-icon
                                     class="faq-collapse"
                                     name="chevron-down"
@@ -1169,14 +1291,15 @@
                             </h4>
                             <div class="faq-content">
                                 <p>
-                                    Is it where I hack into things? That sounds
-                                    illegal.
+                                    We're planning to be in one of the buildings
+                                    on the lovely Tufts University campus, right
+                                    outside Boston.
                                 </p>
                             </div>
                         </div>
                         <div class="faq-cell" id="faq-7">
                             <h4 class="faq-header">
-                                What is a hackathon?
+                                Can I be a mentor?
                                 <ion-icon
                                     class="faq-collapse"
                                     name="chevron-down"
@@ -1184,14 +1307,24 @@
                             </h4>
                             <div class="faq-content">
                                 <p>
-                                    Is it where I hack into things? That sounds
-                                    illegal.
+                                    Yes, absolutely. If you're in college or
+                                    university or beyond, we'd love to have you
+                                    help out.
+                                </p>
+                                <p>
+                                    Also, mentors in high school can apply,
+                                    provided they have enough experience.
+                                </p>
+                                <p>
+                                    Mentors will be responsible for helping
+                                    participants and optionally running
+                                    workshops.
                                 </p>
                             </div>
                         </div>
                         <div class="faq-cell" id="faq-8">
                             <h4 class="faq-header">
-                                What is a hackathon?
+                                Does it cost money?
                                 <ion-icon
                                     class="faq-collapse"
                                     name="chevron-down"
@@ -1199,9 +1332,96 @@
                             </h4>
                             <div class="faq-content">
                                 <p>
-                                    Is it where I hack into things? That sounds
-                                    illegal.
+                                    Nope! It's free! Completely free. All our
+                                    finances are provided by our wonderful
+                                    sponsors, so that you can focus on creating.
                                 </p>
+                            </div>
+                        </div>
+                        <div class="faq-cell" id="faq-9">
+                            <h4 class="faq-header">
+                                Who's organizing this?
+                                <ion-icon
+                                    class="faq-collapse"
+                                    name="chevron-down"
+                                ></ion-icon>
+                            </h4>
+                            <div class="faq-content">
+                                <p>
+                                    We’re a tight-knit group of programmers,
+                                    designers, and event hosters that have known
+                                    each other since middle school.
+                                </p>
+                                <p>
+                                    We’ve run national hackathons amassing 780+
+                                    attendees, hosted panels with guests like
+                                    Grant Sanderson (3Blue1Brown) and Bjarne
+                                    Stroustrup (creator of C++), and organized
+                                    the Eastern Massachusetts District
+                                    Championship for FIRST Lego League.
+                                </p>
+                                <div id="team-headshots">
+                                    <div class="team-member">
+                                        <div class="team-member-headshot"></div>
+                                        <h3 class="team-member-name">Kevin</h3>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-member-headshot"></div>
+                                        <h3 class="team-member-name">Davis</h3>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-member-headshot"></div>
+                                        <h3 class="team-member-name">Vivian</h3>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-member-headshot"></div>
+                                        <h3 class="team-member-name">Roshan</h3>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-member-headshot"></div>
+                                        <h3 class="team-member-name">Leah</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-cell" id="faq-10">
+                            <h4 class="faq-header">
+                                Do I need a team?
+                                <ion-icon
+                                    class="faq-collapse"
+                                    name="chevron-down"
+                                ></ion-icon>
+                            </h4>
+                            <div class="faq-content">
+                                <p>
+                                    We'd love for you to work as part of a team
+                                    of up to 4. Obviously, though, you don't
+                                    have to.
+                                </p>
+                                <p>
+                                    You can choose to sign up with a team you
+                                    already have, or form a team at the event.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-cell" id="faq-11">
+                            <h4 class="faq-header">
+                                Is there a code of conduct?
+                                <ion-icon
+                                    class="faq-collapse"
+                                    name="chevron-down"
+                                ></ion-icon>
+                            </h4>
+                            <div class="faq-content">
+                                <p>
+                                    Yes! It's important for all of our
+                                    participants to be safe and supported.
+                                    Beantown Bash is no place for hate or
+                                    discrimination, and any incidents will be
+                                    taken seriously.
+                                </p>
+
+                                <p>Read the Code of Conduct here.</p>
                             </div>
                         </div>
                     </div>
@@ -1228,9 +1448,9 @@
                     </svg>
                 </div>
                 <h3 id="footer-tagline">
-                    Create<br />
-                    Stuff<br />
-                    Together
+                    Create.<br />
+                    Connect.<br />
+                    Kaboom!
                 </h3>
             </div>
             <div id="footer-right">
@@ -1248,7 +1468,7 @@
                         Unsplash</a
                     >
                 </p>
-                <p>Copyright &copy; 2022-2023 Beantown Bash</p>
+                <p>Copyright &copy; 2023 Beantown Bash</p>
             </div>
         </footer>
 
