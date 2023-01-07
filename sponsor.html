@@ -14,7 +14,6 @@
         />
 
         <link rel="stylesheet" href="assets/styles/common.css" />
-        <link rel="stylesheet" href="assets/styles/main.css" />
 
         <link
             rel="apple-touch-icon"
@@ -856,7 +855,7 @@
         </svg>
         <header>
             <a href="index.html">
-                <div id="header-logo">
+                <div id="header-logo" class="always-visible">
                     <!-- <img src="assets/images/logo2.png" alt="" /> -->
                     <svg
                         viewBox="0 0 593 516"
@@ -876,310 +875,413 @@
                 <button type="button" id="header-menu-close">
                     <ion-icon name="close"></ion-icon>
                 </button>
-                <button type="button" id="home-scroll">Home</button>
-                <button type="button" id="info-scroll">Info</button>
-                <button type="button" id="sponsors-scroll">Sponsors</button>
-                <button type="button" id="faq-scroll">FAQ</button>
+                <a type="button" href="index.html">Home</a>
+                <a type="button" href="sponsor.html" class="is-active"
+                    >Sponsor Us</a
+                >
                 <a id="header-signup" href="preregister.html">Preregister!</a>
             </nav>
             <div id="header-menu-backdrop"></div>
         </header>
 
-        <main>
-            <section id="hero">
-                <div class="hero-column" id="hero-left">
-                    <!-- <img
-                        id="hero-rockets"
-                        src="assets/images/rockets.webp"
-                        alt=""
-                    /> -->
-                    <svg
-                        id="hero-rockets"
-                        viewBox="0 0 1500 1500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        version="1.1"
-                    >
-                        <image
-                            x="200"
-                            y="200"
-                            height="600"
-                            xlink:href="assets/images/joanne2.webp"
-                            class="rocket-people"
-                            id="joanne"
-                        />
-                        <image
-                            x="600"
-                            y="150"
-                            height="600"
-                            xlink:href="assets/images/tim2.webp"
-                            class="rocket-people"
-                            id="tim"
-                        />
-                        <image
-                            x="1000"
-                            y="500"
-                            height="600"
-                            xlink:href="assets/images/alex2.webp"
-                            class="rocket-people"
-                            id="alex"
-                        />
-                        <image
-                            x="1000"
-                            y="1000"
-                            height="600"
-                            xlink:href="assets/images/alana2.webp"
-                            class="rocket-people"
-                            id="alana"
-                        />
-                        <use
-                            href="#rocket-can"
-                            x="300"
-                            y="570"
-                            height="781"
-                            style="opacity: 1"
-                        />
-                    </svg>
-                </div>
-                <div class="hero-column" id="hero-right">
-                    <div id="hero-right-container">
-                        <div id="hero-logo">
-                            <!-- <img src="assets/images/logo2.png" alt="" /> -->
-                            <svg
-                                viewBox="0 0 593 516"
-                                xmlns="http://www.w3.org/2000/svg"
-                                version="1.1"
-                            >
-                                <use
-                                    href="#logo-can"
-                                    x="0"
-                                    y="0"
-                                    style="opacity: 1"
-                                />
-                            </svg>
-                        </div>
-                        <div class="line" id="hero-line-1">
-                            <h1>Beantown</h1>
-                        </div>
-                        <div class="line" id="hero-line-2">
-                            <h1>Bash</h1>
-                            <h3>Spring,<span id="year-vert">2023</span></h3>
-                        </div>
-                        <div class="line" id="hero-line-3">
-                            <!-- <p id="hero-tagline">Build, Ship, Beans.</p> -->
-                            <p id="hero-description">
-                                An <span id="anti">anti-hackathon</span> in
-                                Boston.
-                            </p>
-                            <p id="hero-description">
-                                Hosted at Tufts University.
-                            </p>
-                        </div>
-                        <div class="line" id="hero-line-4">
-                            <a
-                                id="hero-signup"
-                                class="button"
-                                href="preregister.html"
-                                >Preregister!</a
-                            >
-                        </div>
-                        <div class="line" id="hero-line-5">
-                            <button
-                                type="button"
-                                id="hero-learn-more"
-                                class="button"
-                            >
-                                <ion-icon name="arrow-down"></ion-icon> Learn
-                                More
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div id="fadeout"></div>
-            </section>
+        <main class="past-header">
             <section id="content">
-                <div id="info">
-                    <h1 id="info">An "anti-hackathon"?</h1>
-                    <!-- <img src="assets/images/logo2.png" alt="" /> -->
-                    <p>
-                        Beantown Bash is not your average hackathon. Here's a
-                        few things that make it special.
-                    </p>
-                    <div id="reasons">
-                        <div class="reason" id="reason-1">
-                            <div class="reason-icons">
-                                <div class="reason-icon-container">
-                                    <img
-                                        src="assets/images/reasons-mindmap.PNG"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="reason-icon-container">
-                                    <img
-                                        src="assets/images/reasons-miles.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div class="reason-body">
-                                <h4>Make stuff, don't fake stuff</h4>
-                                <p>
-                                    We don't care about buzzwords and flashy
-                                    presentations.
-                                </p>
-                                <p>Show us what you can create.</p>
-                            </div>
-                        </div>
-                        <div class="reason" id="reason-2">
-                            <div class="reason-icons">
-                                <div class="reason-icon-container">
-                                    <img
-                                        src="assets/images/reasons-emma.PNG"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="reason-icon-container">
-                                    <img
-                                        src="assets/images/reasons-list.PNG"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div class="reason-body">
-                                <h4>Speak for yourself</h4>
-                                <p>You're the judge.</p>
-                                <p>
-                                    You and your peers will vote for your
-                                    favorite projects.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="reason" id="reason-3">
-                            <div class="reason-icons">
-                                <div class="reason-icon-container">
-                                    <img
-                                        src="assets/images/reasons-tech.PNG"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="reason-icon-container">
-                                    <img
-                                        src="assets/images/reasons-art.PNG"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div class="reason-body">
-                                <h4>Free to create</h4>
-                                <p>
-                                    Your project doesn't even have to be
-                                    tech-related.
-                                </p>
-                                <p>
-                                    You can make anything, whether that's a
-                                    website, an art project, or a new board
-                                    game.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <h1>Why?</h1>
+                <h1>Sponsor Beantown Bash</h1>
+                <div class="content-section">
+                    <h2 class="underline-purple">What is Beantown Bash?</h2>
                     <img
-                        id="mission-img"
+                        class="float-right-image"
                         src="assets/images/mission.png"
                         alt=""
                     />
+                    <p><em>Create. Connect. Kaboom!</em></p>
                     <p>
-                        We've got a mission. We want to make hackathons truly
-                        fun and enjoyable. Hackathons are a way to show off your
-                        skills, whether that's coding, problem-solving, or
-                        project management. They're not just a way to build your
-                        resume.
+                        Beantown Bash is a Boston based hackathon bringing
+                        together high school students of all backgrounds to
+                        create meaning. Through a weekend of programming,
+                        collaborating, and learning, Participants will build
+                        content-rich projects, network with peers throughout the
+                        Boston area, and discover the value of their passions.
+                    </p>
+                </div>
+                <div class="content-section right-align">
+                    <h2 class="underline-blue">What is a hackathon?</h2>
+                    <p>
+                        Hackathons are 24 to 48 hour programming events where
+                        participants brainstorm ideas, form teams, and prototype
+                        projects, ranging from a basic portfolio website all the
+                        way to a machine learning enabled app that helps you
+                        find the nearest recycling bin (yes, this was done at a
+                        hackathon). After hours of work, participants showcase
+                        their project to selected judges.
                     </p>
                     <p>
-                        Join us in <strong>Spring, 2023</strong> on the Tufts
-                        University campus, for a weekend of fun, hanging out
-                        with great people, and building something awesome.
+                        Students usually go to hackathons to meet new people,
+                        discover new technologies, network with companies, and
+                        win cool prizes.
                     </p>
-                    <h1>Project Tracks</h1>
+                </div>
+                <div class="content-section">
+                    <h2 class="underline-teal">Why another hackathon?</h2>
+                    <p>Because Boston needs one.</p>
                     <p>
-                        We've got a few project tracks to guide your ideas and
-                        help you make something awesome.
+                        Boston (Beantown) is the mecca of hackathons, but as
+                        time has progressed, Beantown hackathons have lost their
+                        meaning. They now emphasize prizes and big titles,
+                        rather than collaboration and learning. Participants are
+                        incentivized to create hollow pitch decks; very little
+                        programming, ideation, or learning is done at hackathons
+                        anymore.
                     </p>
-                    <div id="tracks-grid">
-                        <div class="tracks-cell" id="track-1">
-                            <h4 class="tracks-header">🍳 Refry Rehash</h4>
-                            <div class="tracks-content">
-                                <p>
-                                    Find ways to mix and match your favorite
-                                    things, be it tech stacks, projects, or
-                                    features!
-                                </p>
-                                <div class="tracks-divider"></div>
-                                <p>
-                                    Ex. Using ChatGPT to write a picture book,
-                                    and then DALL-E to create illustrations.
-                                </p>
-                            </div>
+                    <p>
+                        Beantown Bash is redefining “hackathon”; by implementing
+                        a participant oriented judging system, inviting
+                        heartfelt speakers, and fostering an environment of
+                        play, we are bringing attention back to creating.
+                    </p>
+                </div>
+                <div class="content-section right-align">
+                    <h2 class="underline-green">Who are we?</h2>
+                    <p>
+                        We’re a tight-knit group of programmers, designers, and
+                        event hosters that have known each other since middle
+                        school.
+                    </p>
+                    <p>
+                        We’ve run national hackathons amassing 780+ attendees,
+                        hosted panels with guests like Grant Sanderson
+                        (3Blue1Brown) and Bjarne Stroustrup (creator of C++),
+                        and organized the Eastern Massachusetts District
+                        Championship for FIRST Lego League.
+                    </p>
+                </div>
+                <div class="content-section">
+                    <h2 class="underline-yellow">Increasing diversity.</h2>
+                    <p>
+                        In a recent industry survey by
+                        <a
+                            href="https://www.wiley.com/edge/diversity-in-tech-2021-us-report/"
+                            >Wiley</a
+                        >, nearly 5 in 10 young tech workers cited that one of
+                        their main motivations to work in the field was formed
+                        in high school.
+                    </p>
+                    <p>
+                        <a
+                            href="https://www.eeoc.gov/special-report/diversity-high-tech"
+                            >Yet at the same time</a
+                        >, Black and Hispanic Americans only represent 10% and
+                        11% of the technology industry, while females make up
+                        only 42%.
+                    </p>
+                    <p>
+                        There is a disparity in tech right now, and Beantown
+                        Bash seeks to fix that.
+                    </p>
+                    <p>
+                        With a 40:60 female to male ratio, and a team consisting
+                        of all 1st generation Americans, we strive towards
+                        providing those with less opportunity the chance to get
+                        into technology. Beantown Bash will cater towards
+                        students from low-representation and low-income
+                        backgrounds and provide all participants with the
+                        resources to pursue technology.
+                    </p>
+                </div>
+                <div class="content-section right-align">
+                    <h2 class="underline-orange">Why sponsor us?</h2>
+                    <p>
+                        <strong>
+                            Your support will forge an unforgettable experience
+                            for 150 high schoolers in the Boston area.
+                        </strong>
+                    </p>
+                    <p>
+                        From providing students the resources to learn how to
+                        program, to connecting them with like-minded peers,
+                        Beantown Bash is not just an event, it is an experience.
+                        By supporting us, you will be diversifying the Boston
+                        tech scene and allowing high schoolers to discover what
+                        they love.
+                    </p>
+                </div>
+                <div class="content-section">
+                    <h2 class="underline-red">How can I help?</h2>
+                    <p>
+                        To foster a space for creation and innovation, Beantown
+                        Bash needs your help!
+                    </p>
+                    <p>
+                        We are looking for sponsors who can provide monetary
+                        funds, swag, prizes, and mentors to support the event.
+                    </p>
+                    <div class="content-grid">
+                        <div class="content-cell background-teal">
+                            <h3>Monetary funds</h3>
+                            <p>
+                                Any donation amount helps cover Beantown Bash’s
+                                financial costs.
+                            </p>
                         </div>
-                        <div class="tracks-cell" id="track-2">
-                            <h4 class="tracks-header">➡️ New Connect</h4>
-                            <div class="tracks-content">
-                                <p>
-                                    The landscape of social media is shifting;
-                                    can you find a new way to meaningfully
-                                    connect people together?
-                                </p>
-                                <div class="tracks-divider"></div>
-                                <p>
-                                    Ex. A platform that shares real, unfiltered,
-                                    10 sec clips. A new way to perform content
-                                    moderation.
-                                </p>
-                            </div>
+                        <div class="content-cell background-teal">
+                            <h3>Swag</h3>
+                            <p>
+                                Show off your enterprise’s swag! (T-shirts
+                                Stickers, Keychains Water bottles)
+                            </p>
                         </div>
-                        <div class="tracks-cell" id="track-3">
-                            <h4 class="tracks-header">
-                                🔍 Small Data, Big Ideas
-                            </h4>
-                            <div class="tracks-content">
-                                <p>
-                                    Everyone is talking about big data, but can
-                                    you find new ways to explore information on
-                                    the community level?
-                                </p>
-                                <div class="tracks-divider"></div>
-                                <p>
-                                    Ex. Analyzing school student absences to get
-                                    a read on flu spread in a city.
-                                </p>
-                            </div>
+                        <div class="content-cell background-teal">
+                            <h3>Prizes</h3>
+                            <p>
+                                Provide your company products or gift cards for
+                                our winners
+                            </p>
                         </div>
-                        <div class="tracks-cell" id="track-4">
-                            <h4 class="tracks-header">⭐ Other</h4>
-                            <div class="tracks-content">
-                                <p>
-                                    Have an idea that doesn't fit into one of
-                                    our categories? That's fine!
-                                </p>
-                            </div>
+                        <div class="content-cell background-teal">
+                            <h3>Mentors</h3>
+                            <p>Send a company rep to mentor students.</p>
+                        </div>
+                        <div class="content-cell background-teal">
+                            <h3>Food</h3>
+                            <p>Provide food, snacks or drinks for the event!</p>
+                        </div>
+                        <div class="content-cell">
+                            <p>
+                                <em>
+                                    We will equate the value of swag, prizes,
+                                    and food to see which tier benefits your
+                                    organization qualifies for.
+                                </em>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div id="sponsors">
-                    <h1>Sponsors</h1>
+                <div class="content-section">
+                    <h2 class="underline-purple">Sponsor Benefits</h2>
+                    <h3>Tier Table</h3>
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th class="background-gray"></th>
+                                <th class="background-bronze">Bronze</th>
+                                <th class="background-silver">Silver</th>
+                                <th class="background-gold">Gold</th>
+                            </tr>
+                            <tr>
+                                <td class="background-gray small-padding"></td>
+                                <td class="background-bronze small-padding">
+                                    $500 or less
+                                </td>
+                                <td class="background-silver small-padding">
+                                    $1,250+
+                                </td>
+                                <td class="background-gold small-padding">
+                                    $2,500+
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="background-gray">Sending Mentors</td>
+                                <td class="background-bronze">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                                <td class="background-silver">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                                <td class="background-gold">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="background-gray">
+                                    Provide Resources (cloud credits, free
+                                    trials)
+                                </td>
+                                <td class="background-bronze">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                                <td class="background-silver">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                                <td class="background-gold">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                            </tr>
+                            <tr class="top-border-gray">
+                                <td class="background-gray">
+                                    Distributing materials (stickers, pens,
+                                    company swag)
+                                </td>
+                                <td class="background-bronze">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                                <td class="background-silver">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                                <td class="background-gold">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="background-gray">
+                                    Access to participant resumes, Githubs, and
+                                    event stats
+                                </td>
+                                <td class="background-bronze"></td>
+                                <td class="background-silver">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                                <td class="background-gold">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="background-gray">Booth at event</td>
+                                <td class="background-bronze"></td>
+                                <td class="background-silver"></td>
+                                <td class="background-gold">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                            </tr>
+                            <tr class="top-border-gray">
+                                <td class="background-gray">Logo on website</td>
+                                <td class="background-bronze">Small</td>
+                                <td class="background-silver">Medium</td>
+                                <td class="background-gold">Large</td>
+                            </tr>
+                            <tr>
+                                <td class="background-gray">
+                                    Social Media Promotion
+                                </td>
+                                <td class="background-bronze">
+                                    Instagram, Facebook
+                                </td>
+                                <td class="background-silver">
+                                    Instagram, Facebook, Newsletter
+                                </td>
+                                <td class="background-gold">
+                                    All promotional materials
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="background-gray">Logo on t-shirt</td>
+                                <td class="background-bronze"></td>
+                                <td class="background-silver">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                                <td class="background-gold">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="background-gray">
+                                    Pre/post event email
+                                </td>
+                                <td class="background-bronze"></td>
+                                <td class="background-silver"></td>
+                                <td class="background-gold">
+                                    <ion-icon
+                                        name="checkmark-circle-outline"
+                                    ></ion-icon>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content-section">
+                    <h2 class="underline-blue">What will your money do?</h2>
                     <p>
-                        Beantown Bash is powered by the generous support of our
-                        sponsors. If you're interested in joining us,
-                        <a href="sponsor.html">we'd love to talk</a>.
+                        Your money is not going into a black box;
+                        <strong>
+                            it will have a real world effect on 150 high
+                            schoolers' lives </strong
+                        >. Below is a breakdown of the impact of your donation
+                        and how it provides an unforgettable experience for our
+                        participants.
                     </p>
-                    <p></p>
+                    <div class="content-grid">
+                        <div class="content-cell background-teal">
+                            <h3>$100</h3>
+                            <ul>
+                                <li>Website</li>
+                                <li>Non-profit registration</li>
+                                <li>Technical infrastructure</li>
+                            </ul>
+                        </div>
+                        <div class="content-cell background-teal">
+                            <h3>$500</h3>
+                            <ul>
+                                <li>Provide snacks and beverages</li>
+                            </ul>
+                        </div>
+                        <div class="content-cell background-teal">
+                            <h3>$1,500</h3>
+                            <ul>
+                                <li>Provide lunch for all participants</li>
+                                <li>Cover costs for swag and merchandise</li>
+                            </ul>
+                        </div>
+                        <div class="content-cell background-teal">
+                            <h3>$2,500</h3>
+                            <ul>
+                                <li>Provide prizes for participants</li>
+                            </ul>
+                        </div>
+                        <div class="content-cell background-teal">
+                            <h3>$5,000</h3>
+                            <ul>
+                                <li>
+                                    Provide all meals (2x breakfast, 2x lunch,
+                                    1x dinner) for all participants
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-cell background-teal">
+                            <h3>$10,000</h3>
+                            <ul>
+                                <li>
+                                    Fulfill all needs and guarantee an
+                                    unforgettable experience to all
+                                    participants.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h2 class="underline-teal">You're in good company.</h2>
+                    <p>See who else is supporting us.</p>
                     <div class="sponsors-container" id="gold-sponsors">
                         <h4>Gold Tier</h4>
-                        <p>
-                            Get your logo on all our marketing materials, a
-                            booth at the event, and sections in our pre/post
-                            email.
-                        </p>
                         <div class="sponsors-list">
                             <a href="https://www.tufts.edu/">
                                 <img
@@ -1191,10 +1293,6 @@
                     </div>
                     <div class="sponsors-container" id="silver-sponsors">
                         <h4>Silver Tier</h4>
-                        <p>
-                            Get your logo on our shirts, recruiting info for our
-                            participants, and features in our newsletter.
-                        </p>
                         <div class="sponsors-list">
                             <a href="https://www.village-bank.com/">
                                 <img
@@ -1206,307 +1304,17 @@
                     </div>
                     <div class="sponsors-container" id="bronze-sponsors">
                         <h4>Bronze Tier</h4>
-                        <p>
-                            Provide mentors and get promotion on our social
-                            media.
-                        </p>
                         <div class="sponsors-list"></div>
                     </div>
-                    <div id="sponsor-interest">
-                        <p id="sponsor-promo">
-                            Want to help us bring tech back to Boston?
-                        </p>
-                        <a
-                            href="sponsor.html"
-                            class="button"
-                            id="sponsor-lets-talk"
-                        >
-                            Let's Talk
-                        </a>
-                    </div>
                 </div>
-                <div id="faq">
-                    <h2>Frequently Asked Questions</h2>
-                    <div id="faq-grid">
-                        <div class="faq-cell" id="faq-1">
-                            <h3 class="faq-header">
-                                What is a hackathon?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    A hackathon is a 12-48 hour event where
-                                    groups of people can get together and
-                                    create! Don't worry, we're not doing any
-                                    computer hacking.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-2">
-                            <h3 class="faq-header">
-                                What's special about Beantown Bash?
-
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-
-                            <div class="faq-content">
-                                <p>
-                                    We think the current hackathon scene has
-                                    deviated too much from its original goal.
-                                    Projects now involve sticking together as
-                                    many fancy-sounding words as possible,
-                                    instead of making something real and great.
-                                </p>
-                                <p>We made Beantown Bash to change that.</p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-3">
-                            <h3 class="faq-header">
-                                Who is judging our projects?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    We’re inviting the best judges around.
-                                    People who know a great Taylor Swift song
-                                    when they hear it, or an amazing app when
-                                    they see it. Our judging squad is diverse,
-                                    intelligent, and kick ass. You know who it
-                                    is?
-                                </p>
-                                <p>
-                                    You! Yes, you. At Beantown Bash, our
-                                    participants judge. Alongside other hackers,
-                                    you will be rating projects from most
-                                    exciting, to most mathy, to most… Bean.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-4">
-                            <h3 class="faq-header">
-                                Is there an age requirement?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    Nope! High schoolers and middle schoolers
-                                    are welcome! If you’re in college, we'd love
-                                    for you to sign up as one of our
-                                    mentors/volunteers.
-                                </p>
-                                <p>
-                                    If you're interested, please fill out our
-                                    preregistration form.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-5">
-                            <h3 class="faq-header">
-                                What if I can’t program… yet?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    Beantown Bash is open to any skill set and
-                                    background. Can’t program? No problem! Are
-                                    you a designer? Come sign up! Beantown Bash
-                                    isn’t just about programming, it’s about
-                                    creating. As long as you want to make some
-                                    cool stuff in a 12 hour period, come on
-                                    over!
-                                </p>
-                                <p>
-                                    Also, we're offering free mentorship and
-                                    coding seminars during the event, so you can
-                                    learn something new or hone your coding
-                                    chops.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-6">
-                            <h3 class="faq-header">
-                                Where is it located?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    We're planning to be in one of the buildings
-                                    on the lovely Tufts University campus, right
-                                    outside Boston.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-7">
-                            <h3 class="faq-header">
-                                Can I be a mentor?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    Yes, absolutely. If you're in college or
-                                    university or beyond, we'd love to have you
-                                    help out.
-                                </p>
-                                <p>
-                                    Also, mentors in high school can apply,
-                                    provided they have enough experience.
-                                </p>
-                                <p>
-                                    Mentors will be responsible for helping
-                                    participants and optionally running
-                                    workshops.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-8">
-                            <h3 class="faq-header">
-                                Does it cost money?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    Nope! It's free! Completely free. All our
-                                    finances are provided by our wonderful
-                                    sponsors, so that you can focus on creating.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-9">
-                            <h3 class="faq-header">
-                                Who's organizing this?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    We’re a tight-knit group of programmers,
-                                    designers, and event hosters that have known
-                                    each other since middle school.
-                                </p>
-                                <p>
-                                    We’ve run national hackathons amassing 780+
-                                    attendees, hosted panels with guests like
-                                    Grant Sanderson (3Blue1Brown) and Bjarne
-                                    Stroustrup (creator of C++), and organized
-                                    the Eastern Massachusetts District
-                                    Championship for FIRST Lego League.
-                                </p>
-                                <div id="team-headshots">
-                                    <div class="team-member">
-                                        <div class="team-member-headshot"></div>
-                                        <h3 class="team-member-name">Kevin</h3>
-                                    </div>
-                                    <div class="team-member">
-                                        <div class="team-member-headshot"></div>
-                                        <h3 class="team-member-name">Davis</h3>
-                                    </div>
-                                    <div class="team-member">
-                                        <div class="team-member-headshot"></div>
-                                        <h3 class="team-member-name">Vivian</h3>
-                                    </div>
-                                    <div class="team-member">
-                                        <div class="team-member-headshot"></div>
-                                        <h3 class="team-member-name">Roshan</h3>
-                                    </div>
-                                    <div class="team-member">
-                                        <div class="team-member-headshot"></div>
-                                        <h3 class="team-member-name">Leah</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-10">
-                            <h3 class="faq-header">
-                                Do I need a team?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    We'd love for you to work as part of a team
-                                    of up to 4. Obviously, though, you don't
-                                    have to.
-                                </p>
-                                <p>
-                                    You can choose to sign up with a team you
-                                    already have, or form a team at the event.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="faq-cell" id="faq-11">
-                            <h3 class="faq-header">
-                                Is there a code of conduct?
-                                <ion-icon
-                                    class="faq-collapse"
-                                    name="chevron-down"
-                                ></ion-icon>
-                            </h3>
-                            <div class="faq-content">
-                                <p>
-                                    Yes! It's important for all of our
-                                    participants to be safe and supported.
-                                    Beantown Bash is no place for hate or
-                                    discrimination, and any incidents will be
-                                    taken seriously.
-                                </p>
-
-                                <p>
-                                    Our written Code of Conduct is coming soon.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="final-join-us">
+                <div class="content-section">
+                    <h2 class="underline-green">Get in touch.</h2>
                     <p>
-                        Since you've gotten this far, we'd love to have you join
-                        us. Preregister as a participant or mentor, or support
-                        us as a sponsor.
+                        Email us at
+                        <a href="mailto:team@beantownbash.org"
+                            >team@beantownbash.org</a
+                        >. We'd love to hear from you.
                     </p>
-
-                    <a
-                        href="preregister.html"
-                        class="button"
-                        id="sponsor-lets-talk"
-                    >
-                        Preregister
-                    </a>
-
-                    <a
-                        href="sponsor.html"
-                        class="button"
-                        id="sponsor-lets-talk"
-                    >
-                        Sponsor Us
-                    </a>
                 </div>
             </section>
         </main>
@@ -1541,20 +1349,6 @@
                     <a href="sponsor.html">Sponsorship Info</a> •
                     <a href="preregister.html">Preregister</a>
                 </p>
-                <p>
-                    Hero background by
-                    <a
-                        href="https://unsplash.com/@weirick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                    >
-                        Jake Weirick</a
-                    >
-                    on
-                    <a
-                        href="https://unsplash.com/s/photos/stars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                    >
-                        Unsplash</a
-                    >
-                </p>
                 <p>Copyright &copy; 2023 Beantown Bash</p>
             </div>
         </footer>
@@ -1568,6 +1362,5 @@
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
         <script src="assets/js/common.js"></script>
-        <script src="assets/js/main.js"></script>
     </body>
 </html>

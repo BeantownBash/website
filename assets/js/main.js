@@ -1,21 +1,9 @@
-const header = document.querySelector('header');
-const headerLogo = document.querySelector('#header-logo');
-const headerMenu = document.querySelector('#header-menu');
-
 let removePreviousButtonCb = () => {};
 const scrollButtonPairs = [];
 
 let lastKnownScrollPosition = 0;
 let ticking = false;
 function scrollHandler(scrollPos) {
-    if (scrollPos > 150) {
-        header.classList.add('is-blurred');
-        headerLogo.classList.add('is-shown');
-    } else {
-        header.classList.remove('is-blurred');
-        headerLogo.classList.remove('is-shown');
-    }
-
     for (const { button, element } of scrollButtonPairs) {
         if (
             scrollPos > element.offsetTop - header.offsetHeight &&
@@ -75,6 +63,9 @@ bindScrollButton('home-scroll', 'hero');
 bindScrollButton('info-scroll', 'info');
 bindScrollButton('sponsors-scroll', 'sponsors');
 bindScrollButton('faq-scroll', 'faq');
+
+// starting scroll handler
+scrollHandler(0);
 
 const faqGrid = document.querySelector('#faq-grid');
 let closeLastFAQCb = () => {};
@@ -161,19 +152,8 @@ document.querySelectorAll('.faq-cell').forEach((cell) => {
     });
 });
 
-document.querySelector('#header-menu-open').addEventListener('click', () => {
-    headerMenu.classList.add('is-open');
-});
-
-document.querySelector('#header-menu-close').addEventListener('click', () => {
-    headerMenu.classList.remove('is-open');
-});
-
-document
-    .querySelector('#header-menu-backdrop')
-    .addEventListener('click', () => {
-        headerMenu.classList.remove('is-open');
-    });
-
-// starting scroll handler
-scrollHandler(0);
+// shuffle headshots
+const headshotList = document.querySelector('#team-headshots');
+for (let i = headshotList.children.length; i >= 0; i--) {
+    headshotList.appendChild(headshotList.children[(Math.random() * i) | 0]);
+}
