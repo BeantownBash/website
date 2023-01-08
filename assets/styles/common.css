@@ -640,6 +640,7 @@ footer {
 
 .sponsors-list {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .sponsors-list img {
@@ -672,6 +673,16 @@ footer {
 #silver-sponsors .sponsors-list img:hover {
     height: 7rem;
     width: 13rem;
+}
+
+#bronze-sponsors .sponsors-list img {
+    height: 3rem;
+    width: 9rem;
+}
+
+#bronze-sponsors .sponsors-list img:hover {
+    height: 4rem;
+    width: 10rem;
 }
 
 #gold-sponsors {
