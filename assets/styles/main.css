@@ -57,20 +57,20 @@
 
 @keyframes joanne-appear {
     0% {
-        x: 510;
-        y: 770;
+        x: 510px;
+        y: 770px;
 
         height: 10px;
     }
 
     40% {
-        x: 500;
-        y: 400;
+        x: 500px;
+        y: 400px;
     }
 
     100% {
-        x: 50;
-        y: 70;
+        x: 50px;
+        y: 70px;
 
         height: 500px;
     }
@@ -82,20 +82,20 @@
 
 @keyframes tim-appear {
     0% {
-        x: 510;
-        y: 770;
+        x: 510px;
+        y: 770px;
 
         height: 10px;
     }
 
     40% {
-        x: 640;
-        y: 440;
+        x: 640px;
+        y: 440px;
     }
 
     100% {
-        x: 420;
-        y: 50;
+        x: 420px;
+        y: 50px;
 
         height: 600px;
     }
@@ -107,20 +107,20 @@
 
 @keyframes alex-appear {
     0% {
-        x: 510;
-        y: 770;
+        x: 510px;
+        y: 770px;
 
         height: 10px;
     }
 
     40% {
-        x: 780;
-        y: 540;
+        x: 780px;
+        y: 540px;
     }
 
     100% {
-        x: 900;
-        y: 400;
+        x: 900px;
+        y: 400px;
 
         height: 600px;
     }
@@ -132,20 +132,20 @@
 
 @keyframes alana-appear {
     0% {
-        x: 510;
-        y: 770;
+        x: 510px;
+        y: 770px;
 
         height: 10px;
     }
 
     35% {
-        x: 780;
-        y: 640;
+        x: 780px;
+        y: 640px;
     }
 
     100% {
-        x: 800;
-        y: 800;
+        x: 800px;
+        y: 800px;
 
         height: 600px;
     }

@@ -640,54 +640,42 @@ footer {
 
 .sponsors-list {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .sponsors-list img {
-    margin: 0.5rem;
     display: inline-block;
     object-fit: contain;
 
-    transition: height 0.2s, margin 0.2s, width 0.2s;
+    transition: transform 0.2s;
 }
 
 .sponsors-list img:hover {
-    margin: 0;
+    transform: scale(115%);
 }
 
 #gold-sponsors .sponsors-list img {
-    height: 10rem;
-    width: 15rem;
-}
-
-#gold-sponsors .sponsors-list img:hover {
-    height: 11rem;
-    width: 16rem;
+    height: 12rem;
+    width: 25rem;
 }
 
 #silver-sponsors .sponsors-list img {
-    height: 6rem;
+    height: 8rem;
     width: 12rem;
 }
 
-#silver-sponsors .sponsors-list img:hover {
-    height: 7rem;
-    width: 13rem;
-}
-
 #bronze-sponsors .sponsors-list img {
-    height: 3rem;
-    width: 9rem;
-}
-
-#bronze-sponsors .sponsors-list img:hover {
     height: 4rem;
-    width: 10rem;
+    width: 9rem;
 }
 
 #gold-sponsors {
     background: var(--color-gold);
-    color: var(--color-black);
 }
 
 #silver-sponsors {
