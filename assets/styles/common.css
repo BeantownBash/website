@@ -11,6 +11,7 @@
     --color-green: #12792c;
     --color-teal: #006561;
     --color-blue: #3b4bb3;
+    --color-platinum: #e8e1d5;
     --color-gold: #b48c50;
     --color-silver: #746e6a;
     --color-bronze: #67452b;
@@ -531,6 +532,8 @@ footer {
     padding: 0.75rem;
     text-align: center;
     font-size: 1.1rem;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -606,6 +609,11 @@ footer {
     background: var(--color-gold);
 }
 
+.background-platinum {
+    background: var(--color-platinum);
+    color: var(--color-black);
+}
+
 .top-border-gray {
     border-top: 2px solid #0006;
 }
@@ -659,19 +667,29 @@ footer {
     transform: scale(115%);
 }
 
-#gold-sponsors .sponsors-list img {
+#platinum-sponsors .sponsors-list img {
     height: 12rem;
     width: 25rem;
 }
 
-#silver-sponsors .sponsors-list img {
+#gold-sponsors .sponsors-list img {
     height: 8rem;
     width: 12rem;
 }
 
-#bronze-sponsors .sponsors-list img {
+#silver-sponsors .sponsors-list img {
     height: 4rem;
     width: 9rem;
+}
+
+#bronze-sponsors .sponsors-list img {
+    height: 4rem;
+    width: 8rem;
+}
+
+#platinum-sponsors {
+    background: var(--color-platinum);
+    color: var(--color-black);
 }
 
 #gold-sponsors {
