@@ -180,7 +180,7 @@ header {
 header.is-blurred {
     /* -webkit-backdrop-filter: blur(6px) brightness(40%);
     backdrop-filter: blur(6px) brightness(40%); */
-    background: linear-gradient(to bottom, #000d 55%, #0000);
+    background: linear-gradient(to bottom, #000d 65%, #0000);
 }
 
 header a:link {
