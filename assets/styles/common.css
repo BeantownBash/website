@@ -41,6 +41,7 @@ html {
     font-size: 16px;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 @media only screen and (max-width: 768px) {
@@ -659,8 +660,8 @@ footer {
 .sponsors-list img {
     display: inline-block;
     object-fit: contain;
-
     transition: transform 0.2s;
+    max-width: 100%;
 }
 
 .sponsors-list img:hover {
@@ -683,8 +684,30 @@ footer {
 }
 
 #bronze-sponsors .sponsors-list img {
-    height: 4rem;
-    width: 8rem;
+    height: 3rem;
+    width: 7rem;
+}
+
+@media only screen and (max-width: 499px) {
+    #platinum-sponsors .sponsors-list img {
+        height: 10rem;
+        width: 17rem;
+    }
+
+    #gold-sponsors .sponsors-list img {
+        height: 5rem;
+        width: 9rem;
+    }
+
+    #silver-sponsors .sponsors-list img {
+        height: 3rem;
+        width: 7rem;
+    }
+
+    #bronze-sponsors .sponsors-list img {
+        height: 2rem;
+        width: 5rem;
+    }
 }
 
 #platinum-sponsors {
@@ -702,6 +725,37 @@ footer {
 
 #bronze-sponsors {
     background: var(--color-bronze);
+}
+
+.with-streamers {
+    position: relative;
+}
+
+.streamer-container {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+.streamer-container svg {
+    height: 100%;
+    min-height: 1000px;
+    width: 2rem;
+}
+
+.streamer-left {
+    left: -5rem;
+}
+
+.streamer-right {
+    right: -5rem;
+}
+
+@media only screen and (max-width: 920px) {
+    .with-streamers .streamer-left,
+    .with-streamers .streamer-right {
+        display: none;
+    }
 }
 
 /* Footer */
