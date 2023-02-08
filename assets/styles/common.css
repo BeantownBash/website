@@ -625,6 +625,12 @@ footer {
     margin: 2rem;
 }
 
+.float-right-image-small {
+    width: 120px;
+    float: right;
+    margin: 2rem;
+}
+
 @media only screen and (max-width: 650px) {
     .float-right-image {
         display: none;
