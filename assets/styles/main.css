@@ -649,16 +649,6 @@
     font-family: 'Epilogue', sans-serif;
 }
 
-#sponsor-lets-talk {
-    background: var(--color-primary);
-    margin-top: 0.5rem;
-}
-
-#sponsor-lets-talk:hover {
-    text-decoration: none;
-    background: var(--color-dark-primary);
-}
-
 #faq-grid {
     display: block;
     margin-top: 1rem;

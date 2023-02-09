@@ -129,14 +129,6 @@ button {
     cursor: pointer;
 }
 
-ul {
-    margin: 0;
-}
-
-ul li {
-    margin: 0.5rem 0;
-}
-
 .button {
     display: inline-block;
     background: none;
@@ -153,6 +145,24 @@ ul li {
     text-align: center;
     text-decoration: none;
     /* background: blue; */
+}
+
+.button.blue-button {
+    background: var(--color-primary);
+    margin-top: 0.5rem;
+}
+
+.button.blue-button:hover {
+    text-decoration: none;
+    background: var(--color-dark-primary);
+}
+
+ul {
+    margin: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
 }
 
 @keyframes draw-underline {
