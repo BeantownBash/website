@@ -64,6 +64,10 @@ bindScrollButton('info-scroll', 'info');
 bindScrollButton('sponsors-scroll', 'sponsors');
 bindScrollButton('faq-scroll', 'faq');
 
+addHeadingAnchor('info-heading');
+addHeadingAnchor('sponsors-heading');
+addHeadingAnchor('faq-heading');
+
 // starting scroll handler
 scrollHandler(0);
 

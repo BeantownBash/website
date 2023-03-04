@@ -1,0 +1,11 @@
+addHeadingAnchor('what-is-it');
+addHeadingAnchor('about-hackathons');
+addHeadingAnchor('why-another-hackathon');
+addHeadingAnchor('who-are-we');
+addHeadingAnchor('increasing-diversity');
+addHeadingAnchor('why-sponsor');
+addHeadingAnchor('how-can-i-help');
+addHeadingAnchor('benefits');
+addHeadingAnchor('what-will-money-do');
+addHeadingAnchor('sponsors');
+addHeadingAnchor('contact-us');

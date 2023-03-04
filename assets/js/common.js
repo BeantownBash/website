@@ -37,3 +37,13 @@ document.addEventListener('scroll', (e) => {
         headerTicking = true;
     }
 });
+
+function addHeadingAnchor(id) {
+    const heading = document.getElementById(id);
+    if (heading) {
+        const headingContent = heading.innerHTML;
+        const anchorHtml = `<a aria-hidden="true" tabindex="-1" href="#${id}"><span class="icon icon-link"></span></a>`;
+        heading.innerHTML = `${anchorHtml}${headingContent}`;
+        heading.classList.add('has-anchor');
+    }
+}
