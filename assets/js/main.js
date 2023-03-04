@@ -65,6 +65,8 @@ bindScrollButton('sponsors-scroll', 'sponsors');
 bindScrollButton('faq-scroll', 'faq');
 
 addHeadingAnchor('info-heading');
+addHeadingAnchor('why');
+addHeadingAnchor('tracks');
 addHeadingAnchor('sponsors-heading');
 addHeadingAnchor('faq-heading');
 
