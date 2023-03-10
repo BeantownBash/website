@@ -284,13 +284,17 @@
 }
 
 #hero-tagline {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 0;
-    font-weight: 600;
+    margin-top: 0.5rem;
 }
 
-#hero-description {
-    font-size: 1.6rem;
+#hero-line-3-5 {
+    margin: 1.5rem 0;
+}
+
+.hero-description {
+    font-size: 1.3rem;
     margin: 0;
     margin-top: 0.5rem;
 }
@@ -837,18 +841,24 @@
 }
 
 #faq-11 {
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 3;
     grid-row: 7;
     background: var(--color-teal);
 }
 
 #faq-12 {
+    grid-column: 4 / span 2;
+    grid-row: 7;
+    background: var(--color-blue);
+}
+
+#faq-13 {
     grid-column: 1 / span 2;
     grid-row: 8;
     background: var(--color-red);
 }
 
-#faq-13 {
+#faq-14 {
     grid-column: 3 / span 3;
     grid-row: 8;
     background: var(--color-yellow);
