@@ -1,4 +1,5 @@
 #hero {
+    background: var(--color-black);
     background: url(../images/space.webp);
     /* object-fit: contain; */
     background-size: cover;
