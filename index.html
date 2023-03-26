@@ -424,7 +424,10 @@
                 <button type="button" id="info-scroll">Info</button>
                 <button type="button" id="sponsors-scroll">Sponsors</button>
                 <button type="button" id="faq-scroll">FAQ</button>
-                <a id="header-signup" href="register.html">Register!</a>
+                <!-- <a id="header-signup" href="register.html">Register!</a> -->
+                <div id="header-signup" class="is-disabled">
+                    Registrations Closed
+                </div>
             </nav>
             <div id="header-menu-backdrop"></div>
         </header>
@@ -525,12 +528,15 @@
                             </p>
                         </div>
                         <div class="line" id="hero-line-4">
-                            <a
+                            <!-- <a
                                 id="hero-signup"
                                 class="button"
                                 href="register.html"
                                 >Register!</a
-                            >
+                            > -->
+                            <div id="hero-signup" class="button is-disabled">
+                                Registrations Closed
+                            </div>
                         </div>
                         <div class="line" id="hero-line-5">
                             <button
@@ -1164,9 +1170,15 @@
                         as a sponsor.
                     </p>
 
-                    <a href="register.html" class="button blue-button">
-                        Register
-                    </a>
+                    <!-- <a
+                        href="register.html"
+                        class="button blue-button"
+                    >
+                        Register!
+                    </a> -->
+                    <div class="button blue-button is-disabled">
+                        Registrations Closed
+                    </div>
 
                     <a href="sponsor.html" class="button blue-button">
                         Sponsor Us

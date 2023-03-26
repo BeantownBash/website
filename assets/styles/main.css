@@ -420,6 +420,11 @@
     background: var(--color-dark-primary);
 }
 
+#hero-signup.is-disabled {
+    background: var(--color-dark-primary);
+    cursor: not-allowed;
+}
+
 /* #hero-signup:active {
     background: var(--color-darker-primary);
 } */

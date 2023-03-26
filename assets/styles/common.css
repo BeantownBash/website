@@ -157,6 +157,11 @@ button {
     background: var(--color-dark-primary);
 }
 
+.button.is-disabled {
+    background: var(--color-dark-primary);
+    cursor: not-allowed;
+}
+
 ul {
     margin: 0;
 }
@@ -354,6 +359,11 @@ header a:link {
 #header-signup:hover {
     text-decoration: none;
     background: var(--color-dark-primary);
+}
+
+#header-signup.is-disabled {
+    background: var(--color-dark-primary);
+    cursor: not-allowed;
 }
 
 /* #header-signup:active {
