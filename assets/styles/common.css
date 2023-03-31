@@ -714,6 +714,11 @@ footer {
     width: 7rem;
 }
 
+#food-sponsors .sponsors-list img {
+    height: 3rem;
+    width: 7rem;
+}
+
 @media only screen and (max-width: 499px) {
     #platinum-sponsors .sponsors-list img {
         height: 10rem;
@@ -734,6 +739,11 @@ footer {
         height: 2rem;
         width: 5rem;
     }
+
+    #food-sponsors .sponsors-list img {
+        height: 2rem;
+        width: 5rem;
+    }
 }
 
 #platinum-sponsors {
@@ -751,6 +761,10 @@ footer {
 
 #bronze-sponsors {
     background: var(--color-bronze);
+}
+
+#food-sponsors {
+    background: var(--color-gray);
 }
 
 .with-streamers {
